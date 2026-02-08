@@ -22,7 +22,18 @@ console.log("Average marks:", average);
 // Assume:pass marks = 40
 
 let passStudent = marks.filter((mark)=>{
-    return mark>40;
+    return mark>=40;
 });
 console.log("pass student marks:",passStudent);
+
+//Grace marks(map)
+
+//every student have +5 grace marks
+
+let updatedMarks = marks.map((mark)=>{
+    return mark+5;
+});
+console.log(updatedMarks);
+
+
 
